@@ -2,7 +2,7 @@
 
 To understand what LCA is let's take the below image as example:-
 
-![LCA tree][/images/lca-tree-example.png]
+![LCA tree](/images/lca-tree-example.png)
 
 The above tree is an example of a rooted tree with 10 vertices and rooted at node number 0. You may verify manually that 
 LCA(4,5) = 3,
