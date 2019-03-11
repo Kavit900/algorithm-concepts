@@ -87,4 +87,54 @@ int LCA(int u , int v){
 ```
 
 
+### LCA Using Square-Root Decomposition:
+
+*Time Complexity for Preprocessing: O(N)*
+*Time Complexity for answering each query: O(sqrt(N))*
+
+In naive approach we were jumping one parent up the tree till both nodes aren’t on the same depth. But here we perform group wise jump. To perform this group wise jump, we need two parameter associated with each node : 
+
+1) parent and 
+
+2) jump parent
+
+
+Here parent for each node is defined as the first node above the current node that is directly connected to it, where as jump_parent for each node is the node that is the first ancestor of the current node in the group just above the current node.
+
+The key concept here is that first we bring both the nodes in same group and having same jump_parent by climbing decomposed blocks above the tree one by one and then when both the nodes are in same group and have same jump_parent we use our naive approach to find LCA of the nodes.
+
+This optimized group jumping technique reduces the iterating space by a factor of `sqrt(h)` and hence reduces the Time Complexity(refer below for better time complexity analysis)
+
+*Calculate the jump parent as array P, code:-*
+
+```
+int parent[MAX_NODES] , level[MAX_NODES] , P[MAX_NODES];
+vector<vector<int> > tree[MAX_NODES];
+
+void traverse(int node , int head ,int prev_section){
+    /*head stores the node that is in the same level as the current node
+    And is its ancestor*/
+    int current_section =  sqrt(level[node]) + 1; 
+    if(current_section == 1){
+        P[node] = 1 ; 
+    }
+    else{
+        if(current_section == prev_section + 1){
+            P[node] = parent[node] ; 
+            head = node ; 
+        }
+        else{
+            P[node] = parent[head] ; 
+        }
+    }
+    for(int i = 0 ; i < tree[node].size() ; ++i){
+        if(tree[node][i] != parent[node]){
+            traverse(tree[node][i] ,head ,current_section) ; 
+        }
+    }
+}
+
+```
+
+
 
