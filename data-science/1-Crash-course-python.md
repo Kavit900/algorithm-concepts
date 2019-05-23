@@ -14,9 +14,17 @@ To activate the virtual environment, type the command
 
 `source activate dsfs`
 
+or
+
+`conda activate dsfs`
+
 To deactivate a virtual environment, type the command
 
 `source deactivate`
+
+or 
+
+`conda deactivate`
 
 Now, after activating virtual environment, let's install IPython, using the command
 
@@ -24,9 +32,16 @@ Now, after activating virtual environment, let's install IPython, using the comm
 
 Note:- Anaconda comes with it's own package manager, conda, but you can also use the standard Python package manager pip, which is what we'll be doing.
 
+To start jupyter notebook, run the command
+`jupyter notebook`
+
+To install required dependencies, use a similar command as provided below
+
+`pip3 install numpy scipy scikit-learn`
+
 ## defaultdict
 
-Imagine that you’re trying to count the words in a document. An obvious approach is to create a dictionary in which the keys are words and the values are counts. As you check each word, you can increment its count if it’s already in the dictionary and add it to the dictionary if it’s not
+Imagine that you’re trying to count the words in a document. An obvious approach is to create a dictionary in which the keys are words and the values are counts. As you check each word, you can increment its count, if it’s already in the dictionary and add it to the dictionary if it’s not
 
 ```
 from collections import defaultdict
