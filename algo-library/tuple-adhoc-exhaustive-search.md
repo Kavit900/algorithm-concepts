@@ -17,7 +17,7 @@ The second line contains three space-separated integers a, b and c.
 Output
 For each test case, print a single line containing one integer ― the minimum required number of operations.
 
-###Constraints
+### Constraints
 
 1≤T≤1,000
 
