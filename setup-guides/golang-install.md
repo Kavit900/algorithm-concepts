@@ -19,7 +19,8 @@ First, you'll need to tell Go the location of your workspace.
 
 We'll add some environment variables into shell config. One of does files located at your home directory bash_profile, bashrc or .zshrc (for Oh My Zsh Army)
 
-$ vi .bashrc
+`$ vi .bashrc`
+
 Then add those lines to export the required variables
 
 `This is actually your .bashrc file`
@@ -38,7 +39,9 @@ $ mkdir -p $GOPATH $GOPATH/src $GOPATH/pkg $GOPATH/bin
 ```
 
 `$GOPATH/src` : Where your Go projects / programs are located
+
 `$GOPATH/pkg` : contains every package objects
+
 `$GOPATH/bin` : The compiled binaries home
 
 Create a file in your `$GOPATH/src`, in my case `hello.go` Hello world program :
