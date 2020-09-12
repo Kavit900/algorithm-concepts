@@ -60,3 +60,20 @@ Although there are gray areas in classifying a requirement as either functional 
 - The server room shall be accessible by authorized employees 24 hours per day.
 - The background colour for all screens shall be #fff4b6.
 - System programming shall not use deprecated code.
+
+
+###What are best practices for functional and non-functional requirements?
+
+Regardless of the form they take, the key to effective functional and non-functional requirements is that they are clear and as easy to understand as possible. Each audience is different, but in all cases the closer the requirements are to being in natural language, the better. And when it comes to language, the use of active voice is preferred over passive voice. Active voice usually results in clearer and shorter requirements by ensuring there is an “actor” in each requirement statement.
+
+When writing requirements, make sure they are complete and accurate and avoid vagueness. At the same time, avoid including extraneous information that may confuse people. Use “must” instead of “should” as you write the requirements document. Be consistent in the use of terminology and units, and be consistent in the format and language used.
+
+As you seek to make the requirements clear, translate stakeholder and user input into discrete requirements. If they say the system must be “fast”, what does that mean? When they say the web site must be able to handle “a lot” of users, what does that mean? Turn these types of requirements into a number and quantify them.
+
+Make sure that requirements fully cover every scenario, which means including requirements detailing what the system shall not do, but be careful not to over-specify. Focus on the features that the users truly need. More is not always better and often leads to increased cost, diluted impact, and a bloated product that confuses users and is difficult to use. You should be able to trace back every requirement to one of the project objectives. It can be useful to benchmark against other companies in the same industry to understand what they are doing. Sometimes this means you aim for “just as good” as the competition, and sometimes it gives you a point from which to be better.
+
+It is important when talking with users and stakeholders to try to understand the bigger picture of where their requirements are coming from and how they relate to the project objective. What are they really trying to do? Sometimes they will present a solution when they really should present a problem so the best solution can be brainstormed by a larger team. Also, be sure to understand their authority to make functional requirement requests. Usually, a project manager has the final say and should be consulted before adding additional requirements. As you gather requirements, document assumptions in a requirements traceability matrix so you can later go back to the person who requested the feature with any questions you may have. Specification development is frequently an iterative process. As the requirements are developed, be sure they are feasible and non-conflicting.
+
+Defining requirements can be confusing. Although it is not always possible, try to make them understandable by non-technical stakeholders, and use visuals as much as possible to reinforce the information.
+
+As a final takeaway, never consider non-functional requirements to be unimportant, despite the name. A website that takes 30 seconds to load might meet its functional requirements but is still not usable.
