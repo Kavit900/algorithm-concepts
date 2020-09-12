@@ -5,7 +5,7 @@ Let's go step by step, we will start with mentioning Functional and non-function
 ### Functional Requirements of the App
 
 1. Support multiple whiteboards, people can create groups which other users can join.
-2. 2 or more Users should be able to connect together as one group on the App or in other words one whiteboard.
+2. Two or more Users should be able to connect together as one group on the App or in other words one whiteboard.
 3. One User should be able to Draw.
 4. Users except the drawing user should be able to see the drawing on their screens.
 
