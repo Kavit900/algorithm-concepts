@@ -62,7 +62,7 @@ Although there are gray areas in classifying a requirement as either functional 
 - System programming shall not use deprecated code.
 
 
-###What are best practices for functional and non-functional requirements?
+### What are best practices for functional and non-functional requirements?
 
 Regardless of the form they take, the key to effective functional and non-functional requirements is that they are clear and as easy to understand as possible. Each audience is different, but in all cases the closer the requirements are to being in natural language, the better. And when it comes to language, the use of active voice is preferred over passive voice. Active voice usually results in clearer and shorter requirements by ensuring there is an “actor” in each requirement statement.
 
