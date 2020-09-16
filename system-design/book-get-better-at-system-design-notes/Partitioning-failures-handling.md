@@ -46,3 +46,9 @@ This logic either can be taken care of by a specific service which handles the r
 
 **NOTE:- We can add virtual node around our original servers to balance load more, so let's say we add virtual server nodes between each range, so for example, we add virtual server node 3 and 4 in between the hash range server 1 and 2, so this way we split the range between server 1 and server 2 into more smaller parts such that the load is more uniformly distributed.**
 
+**What can we use to maintain information about all the servers?**
+
+Zookeeper is a good candidate to maintain information about all the servers and hold all the servers metadata. 
+
+
+
