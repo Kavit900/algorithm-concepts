@@ -47,6 +47,43 @@ One good strategy in this scenario would be, we can have a mechanism in place, w
 
 Another strategy would involve use of a microservice or zooker which tracks number of consecutive write failures or monitors it, to determine that leader node has gone down and based on that we can start the process of electing a new leader.
 
+**What are some realtime examples, which use single leader approach?**
+- MySQL,
+- DynamoDB,
+- RabbitMQ
+
+There are many more but few of the famous ones are mentioned above.
+
 ### Multileader (Master/Slave) architecture
 
+
+
+
 ### Leaderless 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
