@@ -56,8 +56,22 @@ There are many more but few of the famous ones are mentioned above.
 
 ### Multileader (Master/Slave) architecture
 
+To understand this concept, let's consider two leaders, `Leader 1` and `Leader 2`. `Leader 1` has two replicas - `replica A` and `replica B`. `Leader 2` also has two replicas - `replica C` and `replica D`.  
+
+With Single leader architecture, we saw that all the writes reply on one server and that could put load as well as latency on it, if all of your users are spread all across the globe. So in order to handle scenarios like this, we have separate leaders in separate regions. Let's say `Leader 1` serves `region 1` and `Leader 2` is serving `region 2`. So now based on which server is closer to which clients region, the write requests will be handled by that particular server and in turn the replicas will stay in sync with the leader that are part of. 
+
+**How does the sync between leader happens?**
+
+We can make sure, that whenever write happens on Leader 1, then we don't acknowledge client unless write happens accross all the leaders but one major disadvantage with this approach happens with latency being very high.  
+
+We can go with asynchronous approach for writes between two or more leaders, this will make our architecture eventually consistent but latency will be very low and requests will get processed very quickly. So, one of the disadvantages is, users from different region can be reading stale data.
+
+**What is the major issue that can occur with multileader approach?**
+
+*Write-conflicts* is one of the major issues that we need to take care of but luckily in todays time, we have many data structures available that take care of write conflict errors.
 
 
+![LCA tree](/images/lca-tree-example.png)
 
 ### Leaderless 
 
