@@ -1,0 +1,40 @@
+REPORT UPOT-03-SUM                           OUTCOLLECT TAP TRANSMITTAL REPORT - SUMMARY                            
+Page:1 RANDOM STUFF                                          Date:05/27/2021
+Canada
+
+
+
+
+
+Report Parameters:
+Report Date: 05/27/2021 System Date: 05/28/2021 System Time: 03:40:23
+
+From Date         :: 00/00/0000
+To Date           :: 00/00/0000 Settlement Per.   :: 00/00/0000 TAP Run Id :: 000082177
+
+REPORT UPOT-03-SUM                           OUTCOLLECT TAP TRANSMITTAL REPORT - SUMMARY                            
+Page:2
+Rogers Wireless                                          Date:05/27/2021
+Canada
+VPLMN CODE: 302720  VPLMN NAME: CANADA, ROGERS
+
+SETTLEMENT PERIOD:05/31/2021 TAP RUN ID:82177
+
+HPLMN  TADIG  FILE   FILE        FILE        TOTAL   TOTAL   ---M I N U T E S---    ---VOLUME---  -----------N E T - C 
+H A R G E S-------------   TOTAL         PROVINCE    FEDERAL    TOTAL CODE   CODE   SEQ    CREATE      TRANSMIT    RECs 
+   CDRs    AIR       TOLL       TOTAL-DATA      AIR         TOLL        GPRS        OTHER       CHARGES           TAX   
+      TAX    CHARGES
+NO     DATE        DATE                                                (KB)                                 CHARGES 
+------ ------ -----  --------    --------    ------- ------- ----
+
+000000  AAAAA 00000 05/28/2828  05/28/2828   000000  0000         0        80     01234567           0.00        0.00   
+     0.00        0.00        0.00          0.00        0.00         0.00
+000000  AAAAA 00000 05/28/2828  05/28/2828   000000  0000         0        64     01234567           0.00        0.00   
+     0.00        0.00        0.00          0.00        0.00         0.00
+000000  AAAAA 00000 05/28/2828  05/28/2828   000000  0000         0        00     01234567           0.00        0.00   
+     0.00        0.00        0.00          0.00        0.00         0.00
+000000  AAAAA 00000 05/28/2828  05/28/2828   000000  0000         0        00     56886323           0.00        0.00   
+     0.00        0.00        0.00          0.00        0.00         0.00
+
+GRAND TOTAL:                                  680008  680000         0       310    123456789           0.00        
+0.00        0.00        0.00        0.00          0.00        0.00         0.00
